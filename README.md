@@ -20,7 +20,6 @@ rmmod: ERROR: Module hid_rapoo is not currently loaded
 rmmod: ERROR: Module hid_generic is builtin.
 modprobe: ERROR: could not insert 'hid_rapoo': Exec format error
 ```
--------
 解决方法
 ```
 make clean
@@ -33,7 +32,6 @@ sudo bash install-rapoo-keyboard-driver.sh
 rmmod: ERROR: Module hid_rapoo is not currently loaded
 modprobe: ERROR: could not insert 'hid_rapoo': Operation not permitted
 ```
---------
 解决方法
 关闭bios中到secure boot
 

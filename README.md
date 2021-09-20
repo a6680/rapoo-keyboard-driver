@@ -34,7 +34,7 @@ modprobe: ERROR: could not insert 'hid_rapoo': Operation not permitted
 ```
 解决方法
 
-关闭bios中到secure boot
+关闭bios中的secure boot
 
 
 

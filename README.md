@@ -33,6 +33,7 @@ rmmod: ERROR: Module hid_rapoo is not currently loaded
 modprobe: ERROR: could not insert 'hid_rapoo': Operation not permitted
 ```
 解决方法
+
 关闭bios中到secure boot
 
 

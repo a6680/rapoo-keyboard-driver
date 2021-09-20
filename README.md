@@ -13,15 +13,26 @@ sudo bash install-rapoo-keyboard-driver.sh
 # 注意
 安装新内核（包含编译和安装内核）后，必须通过 “make&&sudo make install” 重新安装hid-rapoo模块。
 
-# 运行错误
+# 错误1
 ```
 rmmod: ERROR: Module hid_rapoo is not currently loaded
 rmmod: ERROR: Module hid_generic is builtin.
 modprobe: ERROR: could not insert 'hid_rapoo': Exec format error
 ```
+# 错误2
+```
+rmmod: ERROR: Module hid_rapoo is not currently loaded
+modprobe: ERROR: could not insert 'hid_rapoo': Operation not permitted
+```
 # 解决方法
+#### 错误1
 ```
 make clean
 make
 sudo make install
 ```
+#### 错误2
+关闭bios中到secure boot
+
+
+

@@ -26,15 +26,8 @@ make clean
 make
 sudo make install
 sudo bash install-rapoo-keyboard-driver.sh
+# 如果主板bios中开启了secure boot需要关闭。
 ```
-## 运行错误2
-```
-rmmod: ERROR: Module hid_rapoo is not currently loaded
-modprobe: ERROR: could not insert 'hid_rapoo': Operation not permitted
-```
-解决方法
-
-关闭bios中的secure boot
 
 
 
